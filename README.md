@@ -8,3 +8,5 @@ Web shop
 (promeniti nalog sa koga se salje)
 
 models > signup > functions.php > send_activation_email() 
+
+-nakon sto se kreira nalog, preko MySql-a mu dodeliti ulogu "admin"
