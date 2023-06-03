@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2023 at 06:23 PM
+-- Generation Time: Jun 03, 2023 at 07:26 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -331,9 +331,9 @@ INSERT INTO `book` (`id`, `name`, `page_count`, `price`, `release_date`, `descri
 (141, 'Mr. Mercedes', 559, '26', '2014-02-28 23:00:00', '#1 New York Times bestseller! In a high-suspense race against time, three of the most unlikely heroes Stephen King has ever created try to stop a lone killer from blowing up thousands. \"Mr. Mercedes is a rich, resonant, exceptionally readable accomplishment by a man who can write in whatever genre he chooses\" (The Washington Post).\r\n\r\nThe stolen Mercedes emerges from the pre-dawn fog and plows through a crowd of men and women on line for a job fair in a distressed American city. Then the lone driver backs up, charges again, and speeds off, leaving eight dead and more wounded. The case goes unsolved and ex-cop Bill Hodges is out of hope when he gets a letter from a man who loved the feel of death under the Mercedes\'s wheels…\r\n\r\nBrady Hartsfield wants that rush again, but this time he\'s going big, with an attack that would take down thousands-unless Hodges and two new unusual allies he picks up along the way can throw a wrench in Hartsfield\'s diabolical plans. Stephen King takes off on a \"nerve-shredding, pulse-pounding race against time\" (Fort Worth Star-Telegram) with this acclaimed #1 bestselling thriller.', 1, '2023-04-29 10:34:07', NULL, 15, 43, 148),
 (142, '\'Salem\'s Lot', 668, '27', '2008-06-02 22:00:00', 'Ben Mears has returned to Jerusalem\'s Lot in hopes that exploring the history of the Marsten House, an old mansion long the subject of rumor and speculation, will help him cast out his personal devils and provide inspiration for his new book.\r\n\r\nBut when two young boys venture into the woods, and only one returns alive, Mears begins to realize that something sinister is at work.\r\n\r\nIn fact, his hometown is under siege from forces of darkness far beyond his imagination. And only he, with a small group of allies, can hope to contain the evil that is growing within the borders of this small New England town.\r\n\r\nWith this, his second novel, Stephen King established himself as an indisputable master of American horror, able to transform the old conceits of the genre into something fresh and all the more frightening for taking place in a familiar, idyllic locale.', 1, '2023-04-29 10:35:19', NULL, 15, 43, 149),
 (143, 'It', 1181, '24', '2016-07-02 22:00:00', 'Stephen King\'s terrifying, classic #1 New York Times bestseller, \"a landmark in American literature\" (Chicago Sun-Times)-about seven adults who return to their hometown to confront a nightmare they had first stumbled on as teenagers…an evil without a name: It.\r\n\r\nWelcome to Derry, Maine. It\'s a small city, a place as hauntingly familiar as your own hometown. Only in Derry the haunting is real.\r\n\r\nThey were seven teenagers when they first stumbled upon the horror. Now they are grown-up men and women who have gone out into the big world to gain success and happiness. But the promise they made twenty-eight years ago calls them reunite in the same place where, as teenagers, they battled an evil creature that preyed on the city\'s children. Now, children are being murdered again and their repressed memories of that terrifying summer return as they prepare to once again battle the monster lurking in Derry\'s sewers.', 1, '2023-04-29 10:36:25', NULL, 15, 43, 150),
-(144, 'Test', 121, '12', '2023-05-29 22:00:00', 'asda sd asd as ad as d', 1, '2023-06-01 21:14:33', NULL, 14, 30, 158),
-(145, 'das a a', 232, '23', '2023-05-31 22:00:00', 'asd asda sda ssd asd asd', 1, '2023-06-03 13:25:54', NULL, 14, 30, 169),
-(146, 'sdf sd fsdf sd ', 23, '23', '2023-05-31 22:00:00', 'dfs fsd fsd fs fsdf sf', 1, '2023-06-03 13:29:12', NULL, 14, 30, 170);
+(144, 'Test', 121, '12', '2023-05-29 22:00:00', 'asda sd asd as ad as d', 0, '2023-06-01 21:14:33', NULL, 14, 30, 158),
+(145, 'das a a', 232, '23', '2023-05-31 22:00:00', 'asd asda sda ssd asd asd', 0, '2023-06-03 13:25:54', NULL, 14, 30, 169),
+(146, 'sdf sd fsdf sd ', 23, '23', '2023-05-31 22:00:00', 'dfs fsd fsd fs fsdf sf', 0, '2023-06-03 13:29:12', NULL, 14, 30, 170);
 
 -- --------------------------------------------------------
 
@@ -982,11 +982,12 @@ INSERT INTO `link` (`id`, `name`, `href`, `appearance`, `id_target`, `id_link_ty
 (7, 'Home', 'home', 2, 1, 1),
 (8, 'Author', 'index.php?page=author', 8, 1, 3),
 (9, 'Documentation', 'views/pages/documentation.pdf', 9, 2, 3),
-(10, 'RSS', 'views/pages/rss.xml', 10, 2, 3),
-(11, 'Sitemap', 'views/pages/sitemap.xml', 11, 2, 3),
-(12, 'Facebook', 'https://www.facebook.com/', 12, 2, 2),
-(13, 'Instagram', 'https://www.instagram.com/', 13, 2, 2),
-(14, 'Twitter', 'https://twitter.com/', 14, 2, 2);
+(10, 'RSS', 'views/pages/rss.xml', 11, 2, 3),
+(11, 'Sitemap', 'views/pages/sitemap.xml', 12, 2, 3),
+(12, 'Facebook', 'https://www.facebook.com/', 13, 2, 2),
+(13, 'Instagram', 'https://www.instagram.com/', 14, 2, 2),
+(14, 'Twitter', 'https://twitter.com/', 15, 2, 2),
+(16, 'GitHub', 'https://github.com/NikolaSamardzic/Readilyphp', 10, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -1024,7 +1025,8 @@ INSERT INTO `link_position` (`position_id`, `link_id`) VALUES
 (2, 11),
 (2, 12),
 (2, 13),
-(2, 14);
+(2, 14),
+(2, 16);
 
 -- --------------------------------------------------------
 
@@ -1054,6 +1056,7 @@ INSERT INTO `link_role` (`role_id`, `link_id`) VALUES
 (1, 12),
 (1, 13),
 (1, 14),
+(1, 16),
 (2, 2),
 (2, 3),
 (2, 6),
@@ -1065,6 +1068,7 @@ INSERT INTO `link_role` (`role_id`, `link_id`) VALUES
 (2, 12),
 (2, 13),
 (2, 14),
+(2, 16),
 (3, 2),
 (3, 3),
 (3, 6),
@@ -1076,6 +1080,7 @@ INSERT INTO `link_role` (`role_id`, `link_id`) VALUES
 (3, 12),
 (3, 13),
 (3, 14),
+(3, 16),
 (4, 2),
 (4, 4),
 (4, 5),
@@ -1086,7 +1091,8 @@ INSERT INTO `link_role` (`role_id`, `link_id`) VALUES
 (4, 11),
 (4, 12),
 (4, 13),
-(4, 14);
+(4, 14),
+(4, 16);
 
 -- --------------------------------------------------------
 
@@ -1471,7 +1477,7 @@ INSERT INTO `user` (`id`, `first_name`, `last_name`, `username`, `email`, `passw
 (27, 'William', 'Chen', 'BusinessBoss', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '1234567', 1, '6569e275f3ec1a117bb2', 1, 0, '2023-04-21 18:23:17', '2023-04-16 17:38:35', NULL, '2023-05-31 10:48:10', 9, 2),
 (28, 'Daniel', 'Park', 'CultureCrusader', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '12345646', 1, '81578a898a814f5b9c98', 1, 0, '2023-04-19 20:42:01', '2023-04-16 17:41:01', NULL, '2023-05-31 11:20:32', 10, 2),
 (29, 'Benjamin', 'Wilson', 'CosmicCrusader', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '123456', 1, '9ab412db3cd9c5be7609', 1, 0, '2023-04-21 16:29:35', '2023-04-16 17:44:23', NULL, NULL, 10, 2),
-(30, 'Probaproba', 'Probaproba', 'Probaproba', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '1234567', 1, '74abc5a68ba6abda38e5', 1, 0, NULL, '2023-04-18 12:40:06', NULL, NULL, NULL, 3),
+(30, 'Probaproba', 'Probaproba', 'Probaproba', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '1234567', 1, '74abc5a68ba6abda38e5', 0, 1, '2023-06-03 16:26:13', '2023-04-18 12:40:06', NULL, NULL, NULL, 3),
 (31, 'Admin', 'Admin', 'Admin', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '12345678', 1, 'b06f6e4360979b2c1487', 1, 0, '2023-05-09 14:32:02', '2023-04-18 17:36:46', NULL, '2023-04-24 15:51:49', NULL, 1),
 (32, 'Agatha', 'Christie', 'AgathaChristie', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '12345678', 1, '0645b30d99f26b49efe9', 1, 0, NULL, '2023-04-23 10:36:59', NULL, NULL, NULL, 3),
 (33, 'Sir Arthur Conan', 'Doyle', 'SirArthur', 'pp5104133@gmail.com', 'add58e3521344b053c0b0499229890c9', '1234567', 1, '97b7639b55960c0da097', 1, 0, NULL, '2023-04-23 10:45:28', NULL, NULL, NULL, 3),
@@ -1827,7 +1833,7 @@ ALTER TABLE `ime`
 -- AUTO_INCREMENT for table `link`
 --
 ALTER TABLE `link`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `link_target`
