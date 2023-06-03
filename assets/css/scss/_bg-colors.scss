@@ -1,0 +1,65 @@
+body{
+    --bg-article-0:#cfbcbc;
+    --bg-article-1:#f1e3e3;
+    --bg-article-2:#cfd6e0;
+    --bg-article-3:#f1f0f0;
+    --bg-article-4:#becab4;
+    --bg-article-5:#dff0d8;
+    --bg-article-6:#fcf1d9;
+    --bg-article-7:#b7c9cc;
+    --bg-article-8:#b9abb9;
+    --bg-article-9:#e9e5c6;
+}
+
+body.dark-mode{
+    --bg-article-0:hsl(0, 17%, 57%);
+    --bg-article-1:hsl(0, 33%, 72%);
+    --bg-article-2:hsl(215, 22%, 65%);
+    --bg-article-3:hsl(0, 3%, 74%);
+    --bg-article-4:hsl(93, 17%, 55%);
+    --bg-article-5:hsl(103, 44%, 69%);
+    --bg-article-6:hsl(41, 50%, 67%);
+    --bg-article-7:hsl(189, 17%, 56%);
+    --bg-article-8:hsl(300, 9%, 50%);
+    --bg-article-9:hsl(53, 44%, 65%);
+}
+
+.bg-article-color-0{
+    background: linear-gradient(to bottom, var(--bg-article-0) 85%, transparent 15%);
+}
+
+.bg-article-color-1{
+    background: linear-gradient(to bottom, var(--bg-article-1) 85%, transparent 15%);
+}
+
+.bg-article-color-2{
+    background: linear-gradient(to bottom, var(--bg-article-2) 85%, transparent 15%);
+}
+
+.bg-article-color-3{
+    background: linear-gradient(to bottom, var(--bg-article-3) 85%, transparent 15%);
+}
+
+.bg-article-color-4{
+    background: linear-gradient(to bottom, var(--bg-article-4) 85%, transparent 15%);
+}
+
+.bg-article-color-5{
+    background: linear-gradient(to bottom, var(--bg-article-5) 85%, transparent 15%);
+}
+
+.bg-article-color-6{
+    background: linear-gradient(to bottom, var(--bg-article-6) 85%, transparent 15%);
+}
+
+.bg-article-color-7{
+    background: linear-gradient(to bottom, var(--bg-article-7) 85%, transparent 15%);
+}
+
+.bg-article-color-8{
+    background: linear-gradient(to bottom, var(--bg-article-8) 85%, transparent 15%);
+}
+
+.bg-article-color-9{
+    background: linear-gradient(to bottom, var(--bg-article-9) 85%, transparent 15%);
+}

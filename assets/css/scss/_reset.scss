@@ -1,0 +1,15 @@
+@import './variables';
+
+*,::before,::after{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px
+}
+:hover, :active{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: $font1;
+}

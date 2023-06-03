@@ -1,0 +1,17 @@
+$font1: 'Source Sans Pro';
+$font2: 'Source Serif Pro';
+
+$font-size:(
+    'size-large':5rem,
+    'size-big':3.3rem,
+    'size-h1':2.5rem,
+    'size-h2':2rem,
+    'size-h3':1.75rem,
+    'size-body':1.25rem,
+    'size-small':1rem,
+);
+
+@function size($size-name){
+   @return map-get($font-size , $size-name)
+}
+

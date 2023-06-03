@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+	<chanel>
+
+		<title>Readily | Most Popular Books</title>
+		<link>https://readilyphp.000webhostapp.com/index.php</link>
+		<description>Notifications About New Popular Books That We Offer</description>
+
+		<item>
+			<title>The Institute</title>
+			<link>https://readilyphp.000webhostapp.com/pages/book.php?id=137</link>
+			<description>In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis's parents and load him into a black SUV.</description>
+		</item>
+
+		<item>
+			<title>One Fish Two Fish Red Fish Blue Fish</title>
+			<link>https://readilyphp.000webhostapp.com/pages/book.php?id=76</link>
+			<description>Count and explore the zany world and words of Seuss in this classic picture book.</description>
+		</item>
+
+		<item>
+			<title>Harry Potter and the Prisoner of Azkaban</title>
+			<link>https://readilyphp.000webhostapp.com/pages/book.php?id=129</link>
+			<description>'Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.'</description>
+		</item>
+
+	</chanel>
+</rss>
